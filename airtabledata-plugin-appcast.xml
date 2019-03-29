@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <item>
+      <title>Version 0.1.1</title>
+      <description>
+        <![CDATA[
+        <ul>
+          <li>Added settings menu</li>
+          <li>Added automatic updating</li>
+          <li>Improved dialog instructions</li>
+        </ul>
+        ]]>
+      </description>
+      <enclosure url="https://skecthairtabledataplugin.com/assets/archive/airtabledata-plugin-v0.1.1.zip" sparkle:version="0.1.1"/>
+    </item>
+    <item>
+      <title>Version 0.1.2</title>
+      <description>
+        <![CDATA[
+        <ul>
+          <li>Added support for non-symbols</li>
+          <li>Improved credential input stability</li>
+          <li>Added support for using Airtable attachments for image data</li>
+        </ul>
+        ]]>
+      </description>
+      <enclosure url="https://skecthairtabledataplugin.com/assets/archive/airtabledata-plugin-v0.1.1.zip" sparkle:version="0.1.1"/>
+    </item>
+  </channel>
+</rss>
