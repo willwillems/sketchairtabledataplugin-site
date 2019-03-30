@@ -27,5 +27,18 @@
       </description>
       <enclosure url="https://sketchairtabledataplugin.com/assets/archive/airtabledata-plugin-v0.1.2.zip" sparkle:version="0.1.2"/>
     </item>
+    <item>
+      <title>Version 0.2.0</title>
+      <description>
+        <![CDATA[
+        <ul>
+          <li>Added support getting specific records</li>
+          <li>Fix number in textlayer bug</li>
+          <li>Added support for regular layers</li>
+        </ul>
+        ]]>
+      </description>
+      <enclosure url="https://sketchairtabledataplugin.com/assets/archive/airtabledata-plugin-v0.2.0.zip" sparkle:version="0.2.0"/>
+    </item>
   </channel>
 </rss>
