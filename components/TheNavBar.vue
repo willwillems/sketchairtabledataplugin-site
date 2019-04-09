@@ -44,7 +44,8 @@ export default {
   }
 
   &__logo {
-    height: 100%;
+    height: 40px;
+    width: 40px;
 
     img {
       height: 40px;
