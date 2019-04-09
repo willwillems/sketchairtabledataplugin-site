@@ -2,8 +2,8 @@
   main
     section.section.section-hero#home
       .content-container.section-hero__content
-        .section-hero__video 
-          video( autoplay loop="loop" poster="img/video-thumb.png")
+        .section-hero__video( style="background-image: url(img/video-thumb.jpg);" )
+          video( muted autoplay loop="loop" poster="img/video-thumb.jpg" )
             source( src="vid/demo.mp4" type="video/mp4" )
         .section-hero__text
           h1.title Airtabledata Plugin
@@ -97,6 +97,9 @@ export default {
   &__video {
     margin: 10px 0;
     max-width: 100%;
+
+    background-size: cover;
+    background-position: center center;
 
     video {
       width: 100%;
