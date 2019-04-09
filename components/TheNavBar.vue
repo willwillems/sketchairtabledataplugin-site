@@ -56,6 +56,9 @@ export default {
     & > * {
       margin: 0 8px;
     }
+    & > *:last-child {
+      margin-right: 0;
+    }
   }
 }
 
