@@ -1,68 +1,211 @@
-<template>
-  <section class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        airtabledata-plugin-site
-      </h1>
-      <h2 class="subtitle">
-        Webpage for the respective plugin
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >GitHub</a>
-      </div>
-    </div>
-  </section>
+<template lang="pug">
+  main
+    section.section.section-hero#home
+      .content-container.section-hero__content
+        .section-hero__video 
+          video( src="vid/demo.mp4" autoplay loop="loop")
+        .section-hero__text
+          h1.title Airtabledata Plugin
+          h2.sub-title  A simple way to get your Airtable data into your sketch symbols. 
+          div.button-container
+            AppButton( @click="goToMore" style="color: #973df2;" ) More...
+            AppButton( @click="goToProductPage" style="color: #ffb142;" pop ) Buy $8,99
+          // p.paragraph  Just link the Sketch layer inside your symbol to your Airtable column by giving it the same name. Whether it's and image or a text layer, it will fill your data effortlessly.
+          // p.paragraph  If you want more advanced options, no problem we've got multiple available! 
+    section.section.section-info#info-section
+      .content-container.section-info__content
+        .section-info__text
+          h1.title Seamless integration
+          p.paragraph Just link the Sketch layer inside your symbol to your Airtable column by giving it the same name. Whether it's and image or a text layer, it will fill your data effortlessly.
+          p.paragraph If you want more advanced options, no problem we've got multiple available! 
+        .section-info__image
+          img( src="img/info-image.png" style="object-fit: cover;")
+    section.section.section-specs#specs-section
+      .content-container.section-specs__header
+        h1.title Fill data in advanced ways
+        h2.sub-title Fill your data using multiple flexible methods.
+      .content-container.section-specs__content
+        .content-column
+          img.content-column__image( src="img/screenshot-name.png" style="object-fit: cover;")
+          .content-column__text
+            h1.sub-title.content-column__title Simple names
+            p.paragraph
+              | Just link the layer to your Airtable column by giving it the same name. Whether it's and image or a text layer, it will fill your data effortlessly. 
+        .content-column
+          img.content-column__image( src="img/screenshot-helpers.png" style="object-fit: cover;")
+          .content-column__text
+            h1.sub-title.content-column__title Advanced filling
+            p.paragraph
+              | There are several helper tools available, for example <code># WiFi •</code> will fill the symbol <code>•</code> WiFI amount of times, so if your WiFi field has a value of 4 this layer would be filled with ••••.
+        .content-column
+          img.content-column__image( src="img/screenshot-javascript.png" style="object-fit: cover;")
+          .content-column__text
+            h1.sub-title.content-column__title Inline JavaScript
+            p.paragraph
+              | There is also a full-fledged JavaScript evaluator available by using the prefix <code>></code>. This means you can create all sorts of special dynamic layers, go nuts! 
+        .content-column
+          img.content-column__image( src="img/screenshot-get-record.png" style="object-fit: cover;")
+          .content-column__text
+            h1.sub-title.content-column__title Inline JavaScript
+            p.paragraph
+              | Need to fill a specific record? No problem! Just refrence the record ID in the symbol or parent folder name by including it prefaced by an <code>@</code> and you're good to go.
+    section.section.section-faq#faq-section
+      .content-container( style="width: 100%;" )
+        h1.title F.A.Q.
+        br
+        h2 Our F.A.Q. has moved...
+        p.paragraph Check it out <a href="https://www.notion.so/F-A-Q-429e80e216364bd7b32b99d51c58938e" target="blank"> here </a>.
+    section.section( style="text-align: center; padding: 20px;" )
+      a( href="mailto:will@sketchairtabledataplugin.com" ) Contact
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import AppButton from '@/components/AppButton.vue'
 
 export default {
   components: {
-    Logo
+    AppButton
+  },
+  methods: {
+    goToProductPage () {
+      document.location.href = 'https://gum.co/FNdp'
+    },
+    goToMore () {
+      document.querySelector('#info-section').scrollIntoView({ behavior: 'smooth' })
+    }
   }
 }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+<style lang="scss" scoped>
+.section-hero {
+  padding-top: 10px;
+  color: rgb(43, 43, 43);
+  // background-color: rgb(114, 63, 205);
+  
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  &__video {
+    margin: 10px 0;
+    max-width: 100%;
+
+    video {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    margin: 12px 0;
+  }
+}
+
+.section-info {
+  color: white;
+  background-color: rgb(114, 63, 205);
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+
+    & > * {
+      width: 50%;
+      flex-grow: 1;
+    }
+  }
+
+  &__image {
+    min-width: 360px;
+    img {
+      width: 100%;
+    }
+  }
+
+}
+
+.section-specs {
+  &__header {
+    text-align: center;
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  &__text {
+    width: 66%;
+  }
+}
+
+.section-faq {
+  background-color: rgb(240, 241, 241);
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+  font-weight: 800;
+  font-size: 3.5rem;
+  line-height: 1em;
+  padding: 0.1em 0;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.sub-title {
+  margin: 12px 0;
+  letter-spacing: -1px;
+  color: rgb(87, 87, 87);
 }
 
-.links {
-  padding-top: 15px;
+.button-container {
+  font-size: 1.5rem;
+}
+
+.paragraph {
+  line-height: 1.5em;
+  margin: 12px 0;
+
+  code {
+    border-radius: 3px;
+    background-color: rgba(138, 138, 138, 0.29);
+    padding: 2px 6px;
+  }
+}
+
+.content-column {
+  $column-count: 2;
+  width: calc(#{100 / $column-count}% - 40px);
+  max-width: 480px;
+
+  min-width: 240px;
+  margin: 20px;
+
+  flex-grow: 1;
+
+  &__image {
+    width: 100%;
+    height: 240px;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__text {
+    line-height: 1.5em;
+  }
+
+  &__title {
+    color: #0080ff;
+  }
 }
 </style>

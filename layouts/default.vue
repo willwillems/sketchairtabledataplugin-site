@@ -1,7 +1,9 @@
 <template>
   <div>
     <TheNavBar />
-    <nuxt />
+    <div class="app-wrapper">
+      <nuxt />
+    </div>
   </div>
 </template>
 
@@ -17,11 +19,14 @@ export default {
 
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600,600i,800,900');
+
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  color: rgb(49, 49, 49);
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
-  word-spacing: 1px;
+  font-weight: 600;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
@@ -36,12 +41,21 @@ html {
   margin: 0;
 }
 
+.app-wrapper {
+  padding-top: 60px;
+}
+
 .content-container {
   max-width: 960px;
+  min-width: 360px;
   padding: 10px;
 }
 
 .section {
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
 }
 </style>

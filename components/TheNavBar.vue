@@ -1,14 +1,28 @@
 <template lang="pug">
   nav.nav-bar
     .content-container.nav-bar__content
-      .nav__logo
-        img
-      .nav__links
-        a( href="" ) Features
-        a( href="" ) F.A.Q.
-        a( href="" )
-        button( click="" ) Buy
+      a.nav-bar__logo( href="#home" )
+        img( src="/img/logo.png" style="object-fit: cover;" )
+      .nav-bar__links
+        a( href="#info-section" ).link Info
+        a( href="#specs-section" ).link Features
+        AppButton( @click="goToProductPage" style="color: #ffb142;" pop ) Buy $8,99
 </template>
+
+<script>
+import AppButton from '@/components/AppButton.vue'
+export default {
+  components: {
+    AppButton
+  },
+  methods: {
+    goToProductPage () {
+      document.location.href = 'https://gum.co/FNdp'
+    }
+  }
+}
+</script>
+
 
 <style lang="scss" scoped>
 .nav-bar {
@@ -18,13 +32,40 @@
   top: 0;
   display: flex;
   justify-content: center;
+  font-size: 1.2rem;
+  background-color: white;
 
   &__content {
-    flex-grow: 1;
+    width: 960px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &__logo {
+    height: 100%;
+
+    img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  &__links {
+    & > * {
+      margin: 0 8px;
+    }
+  }
+}
+
+.link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #999;
+
+  &--active, &:hover {
+    color: rgb(0, 128, 255);
   }
 }
 </style>
