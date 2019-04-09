@@ -48,7 +48,7 @@ html {
 .content-container {
   max-width: 960px;
   min-width: 360px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .section {
@@ -57,5 +57,16 @@ html {
   align-items: center;
   justify-content: center;
   padding: 60px 0;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+}
+
+.link {
+  color: inherit;
+  margin: 0 10px;
 }
 </style>

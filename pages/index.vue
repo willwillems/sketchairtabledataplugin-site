@@ -50,13 +50,15 @@
             p.paragraph
               | Need to fill a specific record? No problem! Just refrence the record ID in the symbol or parent folder name by including it prefaced by an <code>@</code> and you're good to go.
     section.section.section-faq#faq-section
-      .content-container( style="width: 100%;" )
-        h1.title F.A.Q.
-        br
-        h2 Our F.A.Q. has moved...
-        p.paragraph Check it out <a href="https://www.notion.so/F-A-Q-429e80e216364bd7b32b99d51c58938e" target="blank">here</a>.
-    section.section( style="text-align: center; padding: 20px;" )
-      a( href="mailto:will@sketchairtabledataplugin.com" ) Contact
+      .content-container( style="text-align: center;" )
+        h1.title Try it out!
+        h2.sub-title  30 day money back, no questions policy.
+        div.button-container
+          AppButton( @click="goToProductPage" style="color: #973df2;" pop ) Buy $8,99
+    footer.footer( style="background-color: #171717;" )
+      div
+        a.link( href="https://www.notion.so/F-A-Q-429e80e216364bd7b32b99d51c58938e" target="blank" ) F.A.Q.
+        a.link( href="mailto:will@sketchairtabledataplugin.com" ) Contact
 </template>
 
 <script>
@@ -142,7 +144,7 @@ export default {
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 0;
+    padding: 10px;
   }
 
   &__text {
