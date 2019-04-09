@@ -3,7 +3,8 @@
     section.section.section-hero#home
       .content-container.section-hero__content
         .section-hero__video 
-          video( src="vid/demo.mp4" autoplay loop="loop")
+          video( autoplay loop="loop" poster="img/video-thumb.png")
+            source( src="vid/demo.mp4" type="video/mp4" )
         .section-hero__text
           h1.title Airtabledata Plugin
           h2.sub-title  A simple way to get your Airtable data into your sketch symbols. 
@@ -52,7 +53,7 @@
     section.section.section-faq#faq-section
       .content-container( style="text-align: center;" )
         h1.title Try it out!
-        h2.sub-title  30 day money back, no questions policy.
+        h2.sub-title  30 day money back, no questions asked policy.
         div.button-container
           AppButton( @click="goToProductPage" style="color: #973df2;" pop ) Buy $8,99
     footer.footer( style="background-color: #171717;" )
@@ -144,7 +145,7 @@ export default {
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 0px;
   }
 
   &__text {
