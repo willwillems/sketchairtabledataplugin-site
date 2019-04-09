@@ -54,7 +54,7 @@
         h1.title F.A.Q.
         br
         h2 Our F.A.Q. has moved...
-        p.paragraph Check it out <a href="https://www.notion.so/F-A-Q-429e80e216364bd7b32b99d51c58938e" target="blank"> here </a>.
+        p.paragraph Check it out <a href="https://www.notion.so/F-A-Q-429e80e216364bd7b32b99d51c58938e" target="blank">here</a>.
     section.section( style="text-align: center; padding: 20px;" )
       a( href="mailto:will@sketchairtabledataplugin.com" ) Contact
 </template>
