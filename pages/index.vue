@@ -53,7 +53,7 @@
     section.section.section-faq#faq-section
       .content-container( style="text-align: center;" )
         h1.title Try it out!
-        h2.sub-title  30 day money back, no questions asked policy.
+        h2.sub-title  30 day money back policy, no questions asked.
         div.button-container
           AppButton( @click="goToProductPage" style="color: #973df2;" pop ) Buy $8,99
     footer.footer( style="background-color: #171717;" )
