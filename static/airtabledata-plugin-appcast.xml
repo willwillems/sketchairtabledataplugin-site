@@ -12,7 +12,7 @@
         </ul>
         ]]>
       </description>
-      <enclosure url="https://sketchairtabledataplugin.com/assets/archive/airtabledata-plugin-v0.1.1.zip" sparkle:version="0.1.1"/>
+      <enclosure url="https://sketchairtabledataplugin.com/archive/airtabledata-plugin-v0.1.1.zip" sparkle:version="0.1.1"/>
     </item>
     <item>
       <title>Version 0.1.2</title>
@@ -25,7 +25,7 @@
         </ul>
         ]]>
       </description>
-      <enclosure url="https://sketchairtabledataplugin.com/assets/archive/airtabledata-plugin-v0.1.2.zip" sparkle:version="0.1.2"/>
+      <enclosure url="https://sketchairtabledataplugin.com/archive/airtabledata-plugin-v0.1.2.zip" sparkle:version="0.1.2"/>
     </item>
     <item>
       <title>Version 0.2.0</title>
@@ -38,7 +38,7 @@
         </ul>
         ]]>
       </description>
-      <enclosure url="https://sketchairtabledataplugin.com/assets/archive/airtabledata-plugin-v0.2.0.zip" sparkle:version="0.2.0"/>
+      <enclosure url="https://sketchairtabledataplugin.com/archive/airtabledata-plugin-v0.2.0.zip" sparkle:version="0.2.0"/>
     </item>
   </channel>
 </rss>
