@@ -9,7 +9,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'A simple Sketch plugin to fill your symbols with Airtable data' },
+      { hid: 'description', name: 'description', content: 'A simple Sketch plugin to fill your symbols with Airtable data.' },
       // share image
       { property: 'og:site_name', content: 'Sketch Airtabledata plugin' },
       { property: 'og:title', content: 'Sketch Airtabledata plugin' },
