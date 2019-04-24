@@ -47,7 +47,7 @@
         .content-column
           img.content-column__image( src="img/screenshot-get-record.png" style="object-fit: cover;")
           .content-column__text
-            h1.sub-title.content-column__title Inline JavaScript
+            h1.sub-title.content-column__title Get specific records
             p.paragraph
               | Need to fill a specific record? No problem! Just refrence the record ID in the symbol or parent folder name by including it prefaced by an <code>@</code> and you're good to go.
     section.section.section-faq#faq-section
