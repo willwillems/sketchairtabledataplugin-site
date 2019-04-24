@@ -71,9 +71,17 @@ export default {
   },
   methods: {
     goToProductPage () {
+      this.$ga.event({
+        eventCategory: 'conversion',
+        eventAction: 'buy-button',
+      })
       document.location.href = 'https://gum.co/FNdp'
     },
     goToMore () {
+      this.$ga.event({
+        eventCategory: 'interaction',
+        eventAction: 'goto-more',
+      })
       document.querySelector('#info-section').scrollIntoView({ behavior: 'smooth' })
     }
   }
