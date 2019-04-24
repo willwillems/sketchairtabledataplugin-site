@@ -19,8 +19,6 @@ export default {
 
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600,600i,800,900');
-
 html {
   color: rgb(49, 49, 49);
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',

@@ -25,6 +25,7 @@ export default {
       { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
       { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
       { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#f2be3f' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:600,600i,800,900' } 
     ]
   },
 
