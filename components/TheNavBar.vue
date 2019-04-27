@@ -6,6 +6,7 @@
       .nav-bar__links
         a( href="#info-section" ).link Info
         a( href="#specs-section" ).link Features
+        a( href="#faq-section" ).link FAQ
         // AppButton( @click="goToProductPage" style="color: #ffb142;" pop ) Buy $8,99
 </template>
 

@@ -55,6 +55,19 @@ export default {
   ],
 
   /*
+  ** Markdown-it config
+  */
+  markdownit: {
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    // use: [
+    //   ['markdown-it-container', containerName],
+    //   'markdown-it-attrs'
+    // ]
+  },
+
+  /*
   ** GA Nuxt module config
   */
   googleAnalytics: {

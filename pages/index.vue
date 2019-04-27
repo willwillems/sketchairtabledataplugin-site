@@ -52,8 +52,14 @@
               | Need to fill a specific record? No problem! Just refrence the record ID in the symbol or parent folder name by including it prefaced by an <code>@</code> and you're good to go.
     section.section.section-faq#faq-section
       .content-container( style="text-align: center;" )
-        h1.title Try it out!
-        h2.sub-title  30 day money back policy, no questions asked.
+        h1.title F.A.Q.
+        h2.sub-title  
+          | Can't find your question? Feel free to
+          a.link( href="mailto:will@sketchairtabledataplugin.com" ) ask it.
+        .faq-text( v-html="faqHtml" )
+      .content-container( style="text-align: center;" )
+        h1.title Sounds good?
+        h2.sub-title  
         div.button-container
           AppButton( @click="goToProductPage" style="color: #973df2;" pop ) Buy $8,99
     footer.footer( style="background-color: #171717;" )
@@ -64,6 +70,7 @@
 
 <script>
 import AppButton from '@/components/AppButton.vue'
+import faq from '@/assets/faq.md'
 
 export default {
   components: {
@@ -83,6 +90,11 @@ export default {
         eventAction: 'goto-more',
       })
       document.querySelector('#info-section').scrollIntoView({ behavior: 'smooth' })
+    }
+  },
+  computed : {
+    faqHtml () {
+      return faq
     }
   }
 }
@@ -120,8 +132,8 @@ export default {
 }
 
 .section-info {
-  color: white;
-  background-color: rgb(114, 63, 205);
+  // color: white;
+  background-color: #e6f4ff;
 
   &__content {
     display: flex;
@@ -166,6 +178,52 @@ export default {
 
 .section-faq {
   background-color: rgb(240, 241, 241);
+}
+
+.faq-text {
+  text-align: left;
+  font-family: Helvetica, Helvetica, sans-serif;
+  font-weight: 600;
+
+  & /deep/ {
+
+    h1 {
+      padding: 1em 0 .6em 0;
+      font-size: 2.5em;
+    }
+
+    h2 {
+      padding: 1em 0 .6em 0;
+      color: #0080ff;
+    }
+
+    h2:first-child {
+      padding-top: .6em;
+    }
+
+    a {
+      color: grey;
+    }
+
+    b, strong {
+      // font-size: 1.1em; 
+      color: black;
+    }
+
+    li {
+      list-style: disclosure-closed;
+    }
+
+    p {
+      line-height: 1.6em;
+    }
+
+    code {
+      border-radius: 3px;
+      padding: 3px 8px;
+      background-color: rgba(172, 193, 230, 0.41);
+    }
+  }
 }
 
 .title {
