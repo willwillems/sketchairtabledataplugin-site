@@ -53,5 +53,16 @@
       </description>
       <enclosure url="https://sketchairtabledataplugin.com/archive/airtabledata-plugin-v0.3.0.zip" sparkle:version="0.3.0"/>
     </item>
+    <item>
+      <title>Version 0.3.1</title>
+      <description>
+        <![CDATA[
+        <ul>
+          <li>Fix bug: Getting records with "0" in ID fails.</li>
+        </ul>
+        ]]>
+      </description>
+      <enclosure url="https://sketchairtabledataplugin.com/archive/airtabledata-plugin-v0.3.1.zip" sparkle:version="0.3.1"/>
+    </item>
   </channel>
 </rss>
