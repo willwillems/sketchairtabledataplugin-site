@@ -64,5 +64,17 @@
       </description>
       <enclosure url="https://sketchairtabledataplugin.com/archive/airtabledata-plugin-v0.3.1.zip" sparkle:version="0.3.1"/>
     </item>
+    <item>
+      <title>Version 0.4.0</title>
+      <description>
+        <![CDATA[
+        <ul>
+          <li>Added support for selecting specific view.</li>
+          <li>Improved error messages with description of error.</li>
+        </ul>
+        ]]>
+      </description>
+      <enclosure url="https://sketchairtabledataplugin.com/archive/airtabledata-plugin-v0.4.0.zip" sparkle:version="0.4.0"/>
+    </item>
   </channel>
 </rss>
