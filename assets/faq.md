@@ -48,7 +48,7 @@ Currently the following helpers are available:
 
 - `>` The computer
 
-    **Example***:*`> `Hi ${FirstName} from ${Location}`` ➡ `Hi Brian from Amsterdam`
+    **Example***:*`` > `Hi ${FirstName} from ${Location}` `` ➡ `Hi Brian from Amsterdam`
 
     This helper uses Javascript to determine what the resulting value is. Here the value of `FirstName` and `Location` are Brian and Amsterdam respectively. As you can see you can use multiple data columns here.
 
