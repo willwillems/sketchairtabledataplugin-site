@@ -83,6 +83,11 @@ No problem, just select the plugin trough the `Layer` → `Data` menu.
 Sure! Just append `@RECORD_ID` to the name of the symbol and it will fetch the data from that record. 
 For example: `Test Symbol` would become: `Test Symbol @recb6HB2tIufAK8Oq`
 
+## Can I provide an alias for a column?
+
+Yes, Just like the record you can append `$SKETCH_LAYER_NAME=AIRTABLE_LAYER_NAME` to the name of the symbol.
+For example: `Test Symbol` would become: `Test Symbol Name=Firstname`
+
 *Finding the record ID:*
 
 You can find the record ID by going to the record URL by either clicking the exand icon next to the record name or pressing the space bar whilst having a row selected. You can click "copy record URL" from the dropdown next to the record name and it will be the last parameter in this URL:
