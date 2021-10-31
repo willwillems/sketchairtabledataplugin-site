@@ -61,7 +61,7 @@
         h1.title Sounds good?
         h2.sub-title  
         div.button-container
-          AppButton( @click="goToProductPage" style="color: #973df2;" pop ) Buy $16,99
+          AppButton( @click="goToProductPage" style="color: #973df2;" pop ) Download
     footer.footer( style="background-color: #171717;" )
       div
         a.link( href="https://www.notion.so/F-A-Q-429e80e216364bd7b32b99d51c58938e" target="blank" ) F.A.Q.
